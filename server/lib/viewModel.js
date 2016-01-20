@@ -4,6 +4,7 @@ module.exports = function (article) {
   const headline = article.title.title;
   const lastPublishDateTime = article.lifecycle.lastPublishDateTime;
   const id = article.id;
+  const subheading = article.editorial.subheading;
   let url;
 
   if (Array.isArray(article.links)) {
@@ -29,6 +30,7 @@ module.exports = function (article) {
   return {
     id: id,
     headline: headline,
+    subheading : subheading,
     url: url,
     image: image,
     lastPublishDateTime: lastPublishDateTime
