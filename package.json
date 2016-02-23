@@ -50,7 +50,7 @@
   },
   "scripts": {
     "build": "npm-run-all clean copy build:app",
-    "build:app": "obt build --js=./client/src/main.js --sass=./client/src/main.scss --buildFolder=./client/dist",
+    "build:app": "obt build --js=./client/src/main.js --sass=./client/src/main.scss --buildFolder=./client/dist && cp -R ./client/src/icons ./client/dist/icons",
     "clean": "rimraf client/dist/**/*",
     "copy": "mkdir -p client/dist && cp client/src/js/vendor/* client/dist",
     "develop": "npm run watch -- --exec 'npm-run-all -p start build'",
