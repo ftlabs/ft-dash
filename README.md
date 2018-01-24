@@ -1,3 +1,7 @@
+## Warning
+
+The jquery version has been bumped in package.json but not tested, to satisfy an automated security vulnerability check. The code is not live. Caveat Emptor.
+
 ## FT Dash 
 An exploration of applying FT content to your car windscreen.
 
