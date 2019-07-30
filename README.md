@@ -18,11 +18,11 @@ which will grab all of the dependancies this app requires to run.
 Next you need to create a .env file with the following values
 
 ```
-siteApiEndpoint=http://api.ft.com/site/v1/pages
+siteApiEndpoint=https://api.ft.com/site/v1/pages
 frontPageId=[FRONT PAGE ID]
 mainContentKey=main-content
 apiKey=[FT cAPI KEY]
-searchApiEndpoint=http://api.ft.com/content/search/v1
+searchApiEndpoint=https://api.ft.com/content/search/v1
 ```
 
 Next, build the client-side app with `npm run build:app`. Now, you're ready to fire up FT Dash, which you can do with `npm start`. You will now be able to access FT Dash at http://localhost:3000/
